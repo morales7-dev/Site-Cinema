@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CineAluga - Simulador</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>CineAluga</h1>
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="catalogo.html">Catálogo</a>
+      <a href="simulador.html">Simulador</a>
+      <a href="cadastro.html">Cadastro</a>
+      <a href="sobre.html">Sobre</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Simulador de Aluguel</h2>
+    <p>Regra: A partir de <strong>3 dias</strong>, você ganha <strong>20% de desconto</strong> no total!</p>
+
+    <form id="form-simulador" class="formulario" onsubmit="calcularAluguel(event)">
+      <label for="item-select">Escolha o título:</label>
+      <select id="item-select">
+        <option value="10"> (Filmes - R$ 10/dia)</option>
+        <option value="10">Terrifier (Filmes - R$ 10/dia)</option>
+        <option value="12">Breaking Bad (Séries - R$ 12/dia)</option>
+        <option value="12">Lupin (Séries - R$ 12/dia)</option>
+        <option value="15">Avengers Doomsday (Lançamentos - R$ 15/dia)</option>
+        <option value="15">Shrek (25º aniversário)  (Lançamentos - R$ 15/dia)</option>
+      </select>
+
+      <label for="dias-input">Quantidade de dias</label>
+      <input type="number" id="dias-input" value="1" min="1">
+
+      <button type="submit">Calcular Valor</button>
+    </form>
+
+    <div id="resultado-simulador" class="caixa-resultado"></div>
+  </main>
+
+  <footer>
+
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
