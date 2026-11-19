@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CineAluga -- Cadastro</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>CineAluga</h1>
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="catalogo.html">Catálogo</a>
+      <a href="simulador.html">Simulador</a>
+      <a href="cadastro.html">Cadastro</a>
+      <a href="sobre.html">Sobre</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Cadastro de Cliente</h2>
+    <p>Crie sua conta para alugar filmes e séries</p>
+
+    <form id="form-cadastro" class="formulario">
+      <label for="nome">1. Nome completo:</label>
+      <input type="text" id="nome" placeholder="Ex: João Silva">
+
+      <label for="email">2. E-mail:</label>
+      <input type="email" id="email" placeholder="Ex: joao@email.com">
+
+      <label for="idade">3. Idade:</label>
+      <input type="number" id="idade" placeholder="Ex: 20">
+
+      <label for="categoria-fav">4. Categoria favorita:</label>
+      <select id="categoria-fav">
+        <option value="">Selecione...</option>
+        <option value="Filmes">Filmes</option>
+        <option value="Séries">Séries</option>
+        <option value="Lançamentos">Lançamentos</option>
+      </select>
+
+      <label for="senha">5. Crie uma senha (mín. 6 caracteres):</label>
+      <input type="password" id="senha" placeholder="******">
+
+      <button type="submit">Finalizar Cadastro</button>
+    </form>
+
+    <div id="mensagem-cadastro" class="caixa-resultado"></div>
+  </main>
+
+  <footer>
+
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
