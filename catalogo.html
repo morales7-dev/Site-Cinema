@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CineAluga -- Catálogo</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>CineAluga</h1>
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="catalogo.html">Catálogo</a>
+      <a href="simulador.html">Simulador</a>
+      <a href="cadastro.html">Cadastro</a>
+      <a href="sobre.html">Sobre</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Nosso Catálogo</h2>
+    <p>Filtre por categoria:</p>
+
+    <div class="filtros">
+      <button onclick="filtrarCatalogo('Todos')">Todos</button>
+      <button onclick="filtrarCatalogo('Filmes')">Filmes</button>
+      <button onclick="filtrarCatalogo('Séries')">Séries</button>
+      <button onclick="filtrarCatalogo('Lançamentos')">Lançamentos</button>
+    </div>
+
+
+    <p id="contador" class="destaque-texto"></p>
+
+    
+    <div id="lista-catalogo" class="grade"></div>
+  </main>
+
+  <footer>
+
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
